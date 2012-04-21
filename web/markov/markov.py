@@ -1,6 +1,17 @@
 from collections import defaultdict
 import random
 import string
+from glob import glob
+import os.path
+
+def corpus_files():
+    """Return a list of paths to standard corpus files.
+
+    """
+    my_dir = os.path.dirname(__file__)
+    corpus_dir = os.path.join(my_dir, "corpus")
+    filenames = glob(corpus_dir + '/*.txt')
+    return filenames
 
 def from_files(ipaths):
     """Given an iterable over pathnames, build and return a Markov

@@ -1,0 +1,24 @@
+div.banner {
+  padding-bottom: 30px;
+  font-size: 16pt;
+  line-height: 26pt;
+}
+
+h1.main-banner {
+  font-size: 72pt;
+  line-height: 86px;
+  padding-bottom: 20px;
+}
+
+img.main-banner {
+  border: 1px solid black;
+}
+
+p.sub-banner {
+  font-size: 16pt;
+  line-height: 26px;
+}
+
+div.container {
+  padding-top: 40px;
+}
