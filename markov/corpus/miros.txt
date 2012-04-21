@@ -1,0 +1,20 @@
+To apply the template specify the years of copyright (separated by
+comma, not as a range), the legal names of the copyright holders, and
+the real names of the authors if different. Avoid adding text.
+
+This licence is apt for any kind of work (such as source code, fonts,
+documentation, graphics, sound etc.) and the preferred terms for work
+added to MirBSD. It has been drafted as universally usable equivalent
+of the "historic permission notice" adapted to Europen law because
+in some (droit d'auteur) countries authors cannot disclaim all liabi‐
+lities. Compliance to DFSG 1.1 is ensured, and GPLv2 compatibility
+is asserted unless advertising clauses are used. The MirOS Licence is
+certified to conform to OKD 1.0 and OSD 1.9, and qualifies as a
+Free Software and also Free Documentation licence and is inclu‐
+ded in some relevant lists
+
+We believe you are not liable for work inserted which is intellectual
+property of third parties, if you were not aware of the fact, act ap‐
+propriately as soon as you become aware of that problem, seek an ami‐
+cable solution for all parties, and never knowingly distribute a work
+without being authorised to do so by its licensors.
