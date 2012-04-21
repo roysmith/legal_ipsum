@@ -1,0 +1,4 @@
+  cd legal_ipsum
+  virtualenv --no-site-packages --prompt='(legal_ipsum)' env
+  source env/bin/activate
+  pip install -r deploy/env-requirements
