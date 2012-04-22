@@ -1,6 +1,6 @@
 <div class="navigation">
-  <ul class="nav nav-pills nav-stacked">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
+  <ul class="nav nav-pills">
+    <li {% if pagename == "home" %} class="active" {% endif %}><a href="/">Home</a></li>
+    <li {% if pagename == "about" %} class="active" {% endif %}><a href="/about">About</a></li>
   </ul>
 </div>

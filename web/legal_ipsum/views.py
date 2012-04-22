@@ -7,7 +7,7 @@ files = markov.corpus_files()
 chainer = markov.from_files(files)
 
 @require_GET
-def text(request):
+def home(request):
     count = request.GET.get('count', 0)
     try:
         count = int(count)
@@ -19,6 +19,12 @@ def text(request):
     ctx = {
         'paragraphs': paragraphs,
         'selected': str(count),
+        'pagename': 'home',
         }
         
     return render(request, 'legal_ipsum/home.html', ctx)
+
+@require_GET
+def about(request):
+    ctx = {"pagename": "about"}
+    return render(request, 'legal_ipsum/about.html', ctx)
