@@ -28,3 +28,8 @@ def home(request):
 def about(request):
     ctx = {"pagename": "about"}
     return render(request, 'legal_ipsum/about.html', ctx)
+
+@require_GET
+def credits(request):
+    ctx = {"pagename": "credits"}
+    return render(request, 'legal_ipsum/credits.html', ctx)
