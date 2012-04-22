@@ -15,5 +15,10 @@ def text(request):
         count = 0
 
     paragraphs = [chainer.paragraph(3, 3) for i in range(count)]
-    ctx = {'paragraphs': paragraphs}
-    return render(request, 'legal_ipsum/text.html', ctx)
+
+    ctx = {
+        'paragraphs': paragraphs,
+        'selected': str(count),
+        }
+        
+    return render(request, 'legal_ipsum/home.html', ctx)

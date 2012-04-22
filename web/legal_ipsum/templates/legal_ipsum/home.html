@@ -6,17 +6,20 @@
       legal-sounding gibberish but don't have the budget to hire a lawyer
       to write you some at $400/hr.</p>
   </div>
-  <div>
-    <form method="get" action="/text">
-      Give me <select name="count">
-	<option>1</option>
-	<option>2</option>
-	<option>3</option>
-	<option>5</option>
-	<option>8</option>
-	<option>13</option>
-	</select> paragraphs of gibberish.
-      <input type="submit" value="Go!"/>
+  <div class="main-content">
+    <form class="form-inline" method="get" action="/text">
+      <select class="select-count" name="count">
+	<option {% if selected ==  "1" %} selected {% endif %} value="1" >1 paragraph</option>
+	<option {% if selected ==  "2" %} selected {% endif %} value="2" >2 paragraphs</option>
+	<option {% if selected ==  "3" %} selected {% endif %} value="3" >3 paragraphs</option>
+	<option {% if selected ==  "5" %} selected {% endif %} value="5" >5 paragraphs</option>
+	<option {% if selected ==  "8" %} selected {% endif %} value="8" >8 paragraphs</option>
+	<option {% if selected == "13" %} selected {% endif %} value="13">13 paragraphs</option>
+      </select>
+      <input type="submit" value=" Go ! "/>
     </form>
+    {% for p in paragraphs %}
+    <p>{{ p }}</p>
+    {% endfor %}
   </div>
 {% endblock %}
