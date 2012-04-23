@@ -23,13 +23,3 @@ def home(request):
         }
         
     return render(request, 'legal_ipsum/home.html', ctx)
-
-@require_GET
-def about(request):
-    ctx = {"pagename": "about"}
-    return render(request, 'legal_ipsum/about.html', ctx)
-
-@require_GET
-def credits(request):
-    ctx = {"pagename": "credits"}
-    return render(request, 'legal_ipsum/credits.html', ctx)
